@@ -33,8 +33,8 @@ function solve() {
         function showHide() {
             $nextContent = $(this).nextAll('.content:first');
 
-            if ($nextContent.next().attr('class') === 'button'
-                && $(this).next().attr('class') !== 'button') {
+            if ($nextContent.next().hasClass('button')
+                && !$(this).next().hasClass('button')) {
                 if ($nextContent.css('display') === 'none') {
                     $nextContent.css('display', '');
                     $(this).text('hide');
