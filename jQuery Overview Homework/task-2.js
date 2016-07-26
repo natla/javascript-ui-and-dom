@@ -19,7 +19,7 @@
  */
 function solve() {
     return function (selector) {
-        if (typeof(selector) !== 'string' || $(selector).length === 0) {
+        if ($.type(selector) !== 'string' || !$(selector).length) {
             throw Error('Invalid selector!');
         }
 

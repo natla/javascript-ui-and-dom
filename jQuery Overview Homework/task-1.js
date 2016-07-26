@@ -21,7 +21,7 @@
 
 function solve() {
     return function (selector, count) {
-        if (!selector || typeof(selector) !== 'string') {
+        if (!selector || $.type(selector) !== 'string') {
             throw Error('You did not provide a valid selector as a first argument!');
         }
         if (count < 1) {
