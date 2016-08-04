@@ -1,5 +1,3 @@
-# HTML Templates
-_For instructions on how to run the tests, check [here](https://github.com/TelerikAcademy/JavaScript-UI-and-DOM/blob/master/RUN_TESTS.md)_
 
 ## Task 1 - Just a table
 
