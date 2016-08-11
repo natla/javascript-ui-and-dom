@@ -15,10 +15,12 @@ $.fn.colorpicker = function () {
 
     var $colorDiv = $('<div />').addClass('color-div').appendTo($section);
 
+    // When the main button is clicked, it toggles the visibility of the color panel:
     $button.on('click', function () {
         $section.toggleClass('color-panel-visible');
     });
 
+    // The close button hides the color panel:
     $closeBtn.on('click', function () {
         $section.removeClass('color-panel-visible');
     });
@@ -42,6 +44,7 @@ $.fn.colorpicker = function () {
         } : null;
     }
 
+    // When a value is entered into one of the inputs, the other input's value also changes:
     $section.on('change', 'input', function () {
         var $this = $(this);
         if ($this.attr('name') === 'rgb') {
@@ -62,6 +65,7 @@ $.fn.colorpicker = function () {
         }
     });
 
+    // Drawing the color picker onto hte canvas:
     var canvas = document.getElementsByClassName('canvas')[0];
     var ctx = canvas.getContext('2d');
     var img = new Image();
@@ -72,6 +76,7 @@ $.fn.colorpicker = function () {
         ctx.drawImage(img, 0, 0, 300, 150);
     };
 
+    // When the canvas is clicked, the color of the pixel is entered into the input fields as RGB and HEX:
     canvas.addEventListener('click', function (ev) {
         var coordX = ev.layerX;
         var coordY = ev.layerY;
