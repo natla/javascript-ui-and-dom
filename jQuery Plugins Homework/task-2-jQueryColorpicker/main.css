@@ -1,0 +1,69 @@
+.button {
+    height: 35px;
+    width: 35px;
+    background: purple url("imgs/icon.jpg") no-repeat center;
+    background-size: 35px 35px;
+    border: 2px solid gray;
+    border-radius: 8px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    background: #626161 url("imgs/close.png") no-repeat center;
+    background-size: 40px 40px;
+    border: 0;
+}
+
+.color-panel {
+    position: relative;
+    min-height: 300px;
+    min-width: 300px;
+    height: 50%;
+    width: 50%;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #626161;
+    box-shadow: 5px 5px 20px 0 gray;
+    display: none;
+
+}
+
+.color-panel-visible {
+    display: block;
+}
+
+.canvas {
+    display: block;
+    height: 256px;
+    width: 256px;
+    margin: 0 auto 22px auto;
+    border-radius: 45px;
+    cursor: url("imgs/cursor.png"), auto;
+}
+
+input[type=text] {
+    float: left;
+    height: 20px;
+    width: 124px;
+    border: 0;
+}
+
+input[type=text]:nth-of-type(2) {
+    clear: left;
+    margin-top: 5px;
+}
+
+.color-div {
+    float: right;
+    position: relative;
+    top: -24px;
+    width: 120px;
+    height: 54px;
+    background-color: white;
+    display: inline-block;
+    margin-left: 55px;
+}
